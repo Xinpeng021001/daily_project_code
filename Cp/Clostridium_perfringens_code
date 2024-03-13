@@ -13,4 +13,5 @@ datasets summary genome taxon 'Clostridium perfringens' --as-json-lines | datafo
 And use python to filter the metadata:
 1. need to extract the genome ID column, Assembly BioSample Attribute Name, and Assembly BioSample Attribute Value (three columns)
 2. The Assembly BioSample Attribute Name contains all kinds of attribute names, like host/isolation_source/geo_loc_name ..., 
-needs to use Python (convert.ncbi_table.attribute.py) to convert the table forma.
+needs to use Python (convert.ncbi_table.attribute.py) to convert the table format.
+3. choose attributes with "env", "host", "isolation", "geo" (could draw in R if using longitude and latitude)
